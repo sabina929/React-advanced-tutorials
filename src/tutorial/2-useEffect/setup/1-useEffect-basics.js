@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-// by default runs after every re-render
+// by default runs after every re-render (as componentDidMount())
+// for side effects, fetching data, eventListenrs, subscription
 // cleanup function
 // second parameter
 
