@@ -12,7 +12,7 @@ const ShortCircuit = () => {
     <>
       {/* <h1>{firstValue}</h1>
       <h1>value : {secondValue}</h1> */}
-      {/* don't use this way */}
+      {/* don't use this way because if doesn't return a value, it is a statement, not an expression */}
       {/* {if(){console.log('hello world')}} */}
 
       <h1>{text || 'jon snow'}</h1>
