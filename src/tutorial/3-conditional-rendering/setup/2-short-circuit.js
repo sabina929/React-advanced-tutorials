@@ -16,6 +16,7 @@ const ShortCircuit = () => {
       {/* {if(){console.log('hello world')}} */}
 
       <h1>{text || 'jon snow'}</h1>
+      <h1>{text && 'wildlings'}</h1>
       <button className="btn" onClick={()=>setError(!isError)}>Toggle error</button>
       {isError && <h1>Error...</h1>}
       {isError ? (<p>There is an error...</p>) : (<div>
