@@ -3,17 +3,20 @@ import React, { useState, useEffect } from 'react';
 const url = 'https://api.github.com/users';
 
 // second argument
+// useState (setValue()) always triggers re-rendering =====> useEffect
+
 
 const UseEffectFetchData = () => {
 
-const [users, seetUsers] = useState([])
+const [users, setUsers] = useState([])
 
 const getUsers = async () => {
   const response = await fetch(url)
   const users = await response.json()
-  seetUsers(users) 
+  setUsers(users) 
 }
 
+// if second argument is an empty array, then it'll call the useEffect only onload event
 useEffect(()=>{
   getUsers()
 }, [])
