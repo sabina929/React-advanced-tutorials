@@ -7,7 +7,7 @@ const url = 'https://course-api.com/javascript-store-products'
 
 // every time props or state changes, component re-renders
 
-// useCallback for function changings (addToCart)
+// useCallback for function value changings (addToCart, cart)
 // React.memo for prop, state changings (count)
 // useMemo for value changings (products)
 
